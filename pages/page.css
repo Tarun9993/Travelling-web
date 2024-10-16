@@ -1,0 +1,115 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(116, 116, 116);
+    position: sticky; 
+    top: 0;         
+    z-index: 1000; 
+}
+nav .logo img{
+    width: 50%;
+    cursor: pointer;
+}
+.links ul {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: medium;
+    color: black;
+    gap: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.links ul li {
+    position: relative;
+}
+
+.links ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #EF4102;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.links ul li:hover::after {
+    width: 100%;
+}
+
+.booking button {
+    margin: 0px 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EF4102; 
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.booking button:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.options{
+    padding: 10px 40px;
+}
+.options p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.options h3{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #1f1f1f;
+}
+.room{
+    margin: 10px 40px;
+}
+.room-img img{
+    width: 410px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.room-items{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 30px 0px;
+}
+.room-details p{
+    font-size: 18px;
+    color: #898989;
+}
+.room-details h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1f1f1f;
+}
+.room-details span{
+    font-size: 28px;
+    color: #EF4102;
+
+}
+.room-items .btn button{
+    margin: 0px 100%;
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EF4102; 
+    color: white;
+    cursor: pointer; 
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.room-items button:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}

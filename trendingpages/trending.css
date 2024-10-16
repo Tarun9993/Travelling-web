@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(116, 116, 116);
+    position: sticky; 
+    top: 0;         
+    z-index: 1000; 
+}
+nav .logo img{
+    width: 50%;
+    cursor: pointer;
+}
+.links ul {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: medium;
+    color: black;
+    gap: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.links ul li {
+    position: relative;
+}
+
+.links ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #EF4102;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.links ul li:hover::after {
+    width: 100%;
+}
+
+.booking button {
+    margin: 0px 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EF4102; 
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.booking button:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.tour{
+    padding: 30px 90px;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+.date{
+    padding: 10px 90px;
+}
+.date button{
+    padding: 10px 20px;
+    color: rgb(6, 6, 6);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+.date button i{
+    margin-right: 5px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    justify-content: space-around;
+}
+.cards{
+    padding: 20px 0px;
+    cursor: pointer;
+    margin: 0px 30px;
+}
+.card-img img {
+    width: 100%;
+    height: auto;
+}
+.card-img {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.8s;
+    width: 270px; 
+    /* margin: 10px;  */
+}
+.cards span{
+    font-size: 20px;
+    color: green;
+}
+.card-img:hover {
+    transform: scale(1.05); 
+}
+
+.card-img div span {
+    color: gold; 
+    margin-right: 5px;
+}
+
+.card-img h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.card-img h4:hover{
+    text-decoration: underline;
+}
+
+.card-img p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555; /
+}
+
+.card-img h4:last-of-type {
+    font-weight: bold;
+    font-size: 16px;
+    color: #3e4095; 
+}
+.about{
+    text-align: center;
+    padding: 30px 100px;
+}
+.about h2{
+    font-weight: 500;
+    padding: 30px 0px;
+}
+.about p{
+    font-size: 1rem;
+    color: #3d3d3d; 
+    line-height: 2;   
+}
+.about .icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.about .icons i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.fotter {
+    text-align: center;                     
+    border-bottom: 1px solid black;        
+}
+.fotter hr{
+    margin: 10px 30px;
+}
+.fotter p{
+    padding: 30px 0px;
+}
