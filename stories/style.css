@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px rgb(116, 116, 116);
+    position: sticky; 
+    top: 0;         
+    z-index: 1000; 
+}
+nav .logo img{
+    width: 50%;
+    cursor: pointer;
+}
+.links ul {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: medium;
+    color: black;
+    gap: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.links ul li {
+    position: relative;
+}
+
+.links ul li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #EF4102;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.links ul li:hover::after {
+    width: 100%;
+}
+
+.booking button {
+    margin: 0px 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EF4102; 
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.booking button:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.header{
+    padding: 50px;
+}
+.header h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.header p{
+    padding: 20px 0px;
+    font-size: 1.2rem;
+    color: #3a3c3e;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    /* max-width: 600px; */
+}
+.header hr{
+    margin: 10px 0px;
+}
+.places{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 0px 20px;
+    /* padding: 50px 0px; */
+}
+
+.place-img img{
+    width: 530px;
+    border-radius: 10px;
+}
+.place-items h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.5px;
+}
+.place-items p{
+    font-size: 1.2rem;
+    color: #3a3c3e;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    max-width: 600px;
+    padding-top: 15px;
+}
+.place-items p  span{
+    color: black;
+    font-weight: 600;
+}
+ hr{
+    margin: 50px 30px;
+}
+.about{
+    text-align: center;
+    padding: 30px 100px;
+}
+.about h2{
+    font-weight: 500;
+    padding: 30px 0px;
+}
+.about p{
+    font-size: 1rem;
+    color: #3d3d3d; 
+    line-height: 2;   
+}
+.about .icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+.about .icons i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.fotter {
+    text-align: center;                     
+    border-bottom: 1px solid black;        
+}
+.fotter hr{
+    margin: 10px 30px;
+}
+.fotter p{
+    padding: 30px 0px;
+}

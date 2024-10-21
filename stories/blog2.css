@@ -1,0 +1,49 @@
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro ul, .budget ul, .experiences ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.destination-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.destination-item {
+    text-align: center;
+    width: 30%;
+}
+
+.destination-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.destination-item h3 {
+    margin-top: 10px;
+    color: #ff6f61;
+}
